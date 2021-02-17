@@ -1,0 +1,14 @@
+/* Basic reset */
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 100%;
+    width: 100vw;
+    height: 100vh;
+}

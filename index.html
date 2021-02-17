@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="App/Assets/css/layout.css">
+        <link rel="stylesheet" href="App/Assets/css/components.css">
+        <script src="https://kit.fontawesome.com/1e595de393.js" crossorigin="anonymous"></script>
+
+        <title>Analytics Template</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html">Logo</a>
+        </header>
+
+        <div class="container">
+            <main class="dashboard">
+                <section class="dashboard-resume">
+                    <h1><i class="fas fa-tachometer-alt"></i> My Dashboard</h1>
+
+                    <div class="dashboard-resume-items">
+                        <div class="dashboard-resume-item-box">
+                            <p>
+                                <i class="fas fa-comment"></i>
+                                <span class="dashboard-item-box-number">52</span>
+                            </p>
+                            <p>Messages</p>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Regions and Feeds -->
+                <section class="dashboard-regions-feeds">
+                    <div class="dashboard-regions-row">
+                        <div class="dashboard-regions">
+                            <h2>Regions</h2>
+                            <img src="App/Assets/img/region.jpg">
+                        </div>
+                        <div class="dashboard-feeds">
+                            <h2>Feeds</h2>
+                            <div>
+                                <table class="dashboard-feeds-table">
+                                    <tr class="table-row">
+                                        <td class="column-left"></td>
+                                        <td class="column-middle"></td>
+                                        <td class="column-right"></td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td class="column-left"></td>
+                                        <td class="column-middle"></td>
+                                        <td class="column-right"></td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td class="column-left"></td>
+                                        <td class="column-middle"></td>
+                                        <td class="column-right"></td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td class="column-left"></td>
+                                        <td class="column-middle"></td>
+                                        <td class="column-right"></td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td class="column-left"></td>
+                                        <td class="column-middle"></td>
+                                        <td class="column-right"></td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td class="column-left"></td>
+                                        <td class="column-middle"></td>
+                                        <td class="column-right"></td>
+                                    </tr>
+                                    <tr class="table-row">
+                                        <td class="column-left"></td>
+                                        <td class="column-middle"></td>
+                                        <td class="column-right"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- General Stats -->
+                <section class="dashboard-general-stats">
+                    <h2>General Stats</h2>
+                    <div class="dashboard-general-stats-row">
+                        <p>New Visitors</p>
+                        <progress id="new-visitors"></progress>
+                    </div>
+                    <div class="dashboard-general-stats-row">
+                        <p>New Users</p>
+                        <progress id="new-users"></progress>
+                    </div>
+                    <div class="dashboard-general-stats-row">
+                        <p>Bounce Rate</p>
+                        <progress id="bounce-rate"></progress>
+                    </div>
+                </section>
+
+                <!-- Countries -->
+                <section class="dashboard-countries">
+                    <h2>Countries</h2>
+                    <div class="dashboard-countries-row">
+                        <table class="dashboard-countries-table">
+                            <tr class="table-row">
+                                <td class="column-left"></td>
+                                <td class="column-right"></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="column-left"></td>
+                                <td class="column-right"></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="column-left"></td>
+                                <td class="column-right"></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="column-left"></td>
+                                <td class="column-right"></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="column-left"></td>
+                                <td class="column-right"></td>
+                            </tr>
+                            <tr class="table-row">
+                                <td class="column-left"></td>
+                                <td class="column-right"></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="dashboard-countries-row">
+                        <button>More Countries</button>
+                    </div>
+                </section>
+
+                <!-- Users -->
+                <section class="dashboard-users">
+                    <div class="dashboard-users-row">
+                        <div class="dashboard-users-list">
+                            <div class="dashboard-users-list-item">
+                                <img class="dashboard-users-list-item-img" src="App/Assets/img/avatar2.png">
+                                <p class="dashboard-users-list-item-name">Mike</p>
+                            </div>
+                            <div class="dashboard-users-list-item">
+                                <img class="dashboard-users-list-item-img" src="App/Assets/img/avatar5.png">
+                                <p class="dashboard-users-list-item-name">Jill</p>
+                            </div>
+                            <div class="dashboard-users-list-item">
+                                <img class="dashboard-users-list-item-img" src="App/Assets/img/avatar6.png">
+                                <p class="dashboard-users-list-item-name">Jane</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- Comments -->
+                <section class="dashboard-comments">
+                    <h2>Recent Comments</h2>
+                    <div class="dashboard-comments-row">
+                        <div class="dashboard-comments-list">
+                            <div class="dashboard-comments-list-item">
+                                <img class="dashboard-comments-list-user-img" src="App/Assets/img/avatar3.png">
+                                <p class="dashboard-comments-list-insert">
+                                    John <span><datetime>Sep 29, 2014, 9:12 PM</datetime></span>
+                                </p>
+                                <p class="dashboard-comments-list-message">
+                                    Keep up the GREAT work! I am cheering for you!! 
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                            <div class="dashboard-comments-list-item">
+                                <img class="dashboard-comments-list-user-img" src="App/Assets/img/avatar1.png">
+                                <p class="dashboard-comments-list-insert">
+                                    John <span><datetime>Sep 28, 2014, 10:15 PM</datetime></span>
+                                </p>
+                                <p class="dashboard-comments-list-message">
+                                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="dashboard-filters">
+                    <div class="dashboard-filters-demographic">
+                        <h2>Demograpic</h2>
+                        <p>Language</p>
+                        <p>Country</p>
+                        <p>City</p>
+                    </div>
+                    <div class="dashboard-filters-system">
+                        <h2>System</h2>
+                        <p>Browser</p>
+                        <p>OS</p>
+                        <p>More</p>
+                    </div>
+                    <div class="dashboard-filters-target">
+                        <h2>Target</h2>
+                        <p>Users</p>
+                        <p>Active</p>
+                        <p>Geo</p>
+                        <p>Interests</p>
+                    </div>
+                </section>
+
+            </main>
+            
+            <aside class="menu">
+                <section class="menu-user-profile">
+                    <div class="menu-user-picture">
+                        <img src="App/Assets/img/avatar2.png">
+                    </div>
+                    <div class="menu-user-data">
+                        <p class="menu-user-logged">Welcome, <span id="user-logged">Mike</span></p>
+                        <div class="menu-social-icons">
+                            <a href="#"><i class=""></i></a>
+                            <a href="#"><i class=""></i></a>
+                            <a href="#"><i class=""></i></a>
+                        </div>
+                    </div>
+                </section>
+                <section class="menu-list">
+                    <h1>Dashboard</h1>
+                    <a class="menu-list-item"><i class=""></i> Overview</a>
+                    <a class="menu-list-item"><i class=""></i> Views</a>
+                    <a class="menu-list-item"><i class=""></i> Traffic/a>
+                    <a class="menu-list-item"><i class=""></i> Geo</a>
+                    <a class="menu-list-item"><i class=""></i> Order</a>
+                    <a class="menu-list-item"><i class=""></i> News</a>
+                    <a class="menu-list-item"><i class=""></i> General</a>
+                    <a class="menu-list-item"><i class=""></i> History</a>
+                    <a class="menu-list-item"><i class=""></i> Settings</a>
+                </section>
+            </aside>            
+        </div>
+
+        <footer>
+            <h2>Footer</h2>
+            <p>Powered by Lucas</p>
+        </footer>
+        
+    </body>
+</html>
