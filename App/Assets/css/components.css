@@ -1,0 +1,167 @@
+/* ------------------------------ */
+/*             General            */
+/* ------------------------------ */
+html, 
+body {
+    font-family: 'Raleway', 'Roboto', sans-serif;
+    font-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    max-width: 200px;
+}
+
+/* Variables */
+:root {
+    --color-red: #f44336;
+    --color-blue: #2196F3;
+    --color-seagreen: #009688;
+    --color-yellow-gold: #ff9800;
+    --color-green: #4CAF50;
+}
+
+
+/* ------------------------------ */
+/*              Header            */
+/* ------------------------------ */
+header {
+    background-color: black;
+    padding: 10px 15px;
+}
+
+.menu-button {
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* ------------------------------ */
+/*              Menu              */
+/* ------------------------------ */
+
+.menu {
+    background: white;    
+}
+
+/* User area in the menu */
+.menu-user-profile {
+    border-bottom: 1px solid lightgray;
+    display: flex;
+    margin-bottom: 2em;
+    padding: 15px;
+}
+
+.menu-user-profile > div {
+    padding: 15px 0;
+}
+
+.menu-user-picture {
+    flex: 0 0 50px;
+}
+
+.menu-user-picture img {
+    border-radius: 50%;
+    display: block;
+    width: 50px;
+    height: 50px;
+}
+
+.menu-user-data {
+    flex: 1 0 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.menu-user-logged {
+    margin: 10px 0;
+    transform: translateX(15%);
+}
+
+.menu-user-logged #user-logged {
+    font-weight: bold;
+}
+
+.menu-social-icons {
+    transform: translateX(25%);
+}
+
+.menu-social-icons a {
+    color: black;
+    padding: 10px 15px;
+    text-decoration: none;    
+}
+.menu-social-icons a:hover {
+    background-color: lightgray;
+}
+
+
+/* List of menu items */
+.menu-list > h2 {
+    padding: 15px;
+}
+
+.menu-list-item {
+    cursor: pointer;
+    display: block;
+    padding: 10px 15px;
+}
+
+.menu-list-item:hover, .menu-list-item.active:hover {
+    background-color: lightgray;
+    color: black;
+}
+
+.menu-list-item.close-menu-list {
+    background-color: gray;
+    color: white;
+}
+
+.menu-list-item.active {
+    background-color: var(--color-blue);
+    color: white;
+}
+
+
+/* ------------------------------ */
+/*           Dashboard            */
+/* ------------------------------ */
+.dashboard, footer {
+    background-color: #eee;
+}
+
+.dashboard > section {
+    padding: 15px;
+}
+
+.dashboard > section:last-child {
+    padding: 2.5em 2em;
+}
+
+.dashboard-filters {
+    background-color: gray;
+}
+
+
+/* ------------------------------ */
+/*             Footer             */
+/* ------------------------------ */
+.footer {
+    padding: 2em 15px;
+}
+
+.footer > h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
