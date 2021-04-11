@@ -466,3 +466,7 @@ td > .fa-share-alt {
     font-weight: normal;
     margin-bottom: 20px;
 }
+
+.footer a {
+    color: black;
+}
