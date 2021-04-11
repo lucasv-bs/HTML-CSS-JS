@@ -389,6 +389,40 @@ td > .fa-share-alt {
     padding-left: 20px;
 }
 
+/* ----- RECENT COMMENTS ----- */
+
+.dashboard-comments-list > div + div {
+    margin-top: 35px;
+}
+
+.dashboard-comments-list-item {
+    margin-bottom: 15px;
+}
+
+.dashboard-comments-list-user-img {
+    width: 100px;
+    border-radius: 100%;
+}
+
+.dashboard-comments-list-item > p {
+    margin-top: 15px;
+    padding: 0 15px;
+}
+
+.dashboard-comments-list-insert {
+    font-size: 1.3rem;
+}
+
+.dashboard-comments-list-insert > span {
+    color: #555;
+    font-size: 1rem;    
+}
+
+.dashboard-comments-list-message {
+    /* font-size: 0.9rem; */
+    line-height: 1.5rem;
+}
+
 /* ----- FILTERS ----- */
 
 .dashboard-filters {
