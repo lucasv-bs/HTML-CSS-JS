@@ -248,12 +248,13 @@ header {
     padding: 8px;
 }
 
-.dashboard-feeds-table .table-row > .column-left, .column-right {
+.dashboard-feeds-table .table-row > .column-left {
     text-align: center;
 }
 
 .dashboard-feeds-table .table-row > .column-right {
     font-style: italic;
+    text-align: center;
 }
 
 td > .fa-user, .fa-bookmark {
@@ -273,18 +274,6 @@ td > .fa-share-alt {
 }
 
 /* ----- GENERAL STATS ----- */
-
-@-webkit-keyframes animate-stripes {
-    100% { background-position: -100px 0px; }
-}
-
-@-moz-keyframes animate-stripes {
-    100% { background-position: -100px 0px; }
-}
-
-@keyframes animate-stripes {
-    100% { background-position: -100px 0px; }
-}
 
 .dashboard-general-stats-row > progress[value] {
     background-color: #999;
@@ -329,6 +318,71 @@ td > .fa-share-alt {
 
 .dashboard-general-stats-row > progress[id="bounce-rate"]::-moz-progress-bar {
     background-color: var(--color-red);
+}
+
+
+/* ----- COUNTRIES ----- */
+
+.dashboard-countries > .dashboard-countries-row + .dashboard-countries-row {
+    margin-top: 15px;
+}
+
+.dashboard-countries-table {
+    border: 1px solid #bbb;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.dashboard-countries-table .table-row:nth-child(odd) {
+    background-color: white;
+}
+
+.dashboard-countries-table .table-row + .table-row {
+    border-top: 1px solid #ccc;
+}
+
+.dashboard-countries-table .table-row > td {
+    padding: 8px;
+}
+
+.dashboard-countries-table .table-row > td:first-child {
+    padding-left: 16px;
+}
+
+.dashboard-countries-row > button {
+    background-color: #555;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 8px 16px;
+}
+
+/* ----- RECENT USERS ----- */
+
+.dashboard-users-list {
+    background-color: white;
+    box-shadow: 2px 4px 8px rgba(0,0,0,0.3), -2px -2px 8px rgba(0,0,0,0.2);
+}
+
+.dashboard-users-list > div + div {
+    border-top: 1px solid #ccc;
+}
+
+.dashboard-users-list-item {
+    align-items: center;
+    display: flex;
+    padding: 15px;
+}
+
+.dashboard-users-list-item-img {
+    border-radius: 100%;    
+    width: 35px;
+}
+
+.dashboard-users-list-item-name {
+    font-size: 1.5rem;
+    padding-left: 20px;
 }
 
 /* ----- FILTERS ----- */
