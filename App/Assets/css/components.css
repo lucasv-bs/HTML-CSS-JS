@@ -426,7 +426,32 @@ td > .fa-share-alt {
 /* ----- FILTERS ----- */
 
 .dashboard-filters {
-    background-color: gray;
+    background-color: #555;
+    color: white;
+}
+
+.dashboard-filters h2 {
+    line-height: 1.7rem;
+}
+
+.dashboard-filters-demographic > h2 {
+    border-bottom: 5px solid var(--color-green);
+}
+
+.dashboard-filters-system > h2 {
+    border-bottom: 5px solid var(--color-red);
+}
+
+.dashboard-filters-target > h2 {
+    border-bottom: 5px solid var(--color-yellow-gold);
+}
+
+.dashboard-filters > div + div {
+    margin-top: 30px;
+}
+
+.dashboard-filters > div > p {
+    margin-bottom: 20px;
 }
 
 
