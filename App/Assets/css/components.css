@@ -48,10 +48,12 @@ header {
     padding: 10px 15px;
 }
 
-.menu-button {
-    font-size: 1.1rem;
+.menu-button {    
+    background-color: black;
+    border: none;
     color: white;
     cursor: pointer;
+    font-size: 1.1rem;
     text-decoration: none;
 }
 
