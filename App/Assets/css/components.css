@@ -255,7 +255,7 @@ header {
 }
 
 .dashboard-regions {
-    flex: 1 1 200px;
+    flex: 1 1 50px;
     margin-bottom: 10px;
 }
 
@@ -304,6 +304,22 @@ td > .fa-bell, .fa-comment, .fa-laptop {
 
 td > .fa-share-alt {
     color: var(--color-green);
+}
+
+@media screen and (min-width: 600px) {
+    .dashboard-regions-feeds {
+        flex-direction: row;        
+    }
+    .dashboard-regions {
+        margin-right: 15px;
+    }
+    .dashboard-regions > img {
+        max-width: 100%;
+        height: auto;
+    }
+    .dashboard-feeds {
+        flex: 1 0 300px;
+    }
 }
 
 /* ----- GENERAL STATS ----- */
