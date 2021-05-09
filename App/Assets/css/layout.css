@@ -35,13 +35,7 @@
         "header"
         "menu"
         "content"
-        "footer";
-    /* align-items: start; */
-    /* grid-template-columns: 300px 1fr; */
-    /* grid-template-areas:
-        "header header"
-        "menu content"
-        "menu footer" */
+        "footer";    
 }
 
 header {
@@ -81,9 +75,19 @@ header {
     position: relative;
 }
 
+@media screen and (min-width: 600px) {
+    .menu {
+        width: 50%;
+    }
+}
+
 @media screen and (min-width: 990px) {
+    header {
+        justify-content: flex-end;
+    }
+
     .container {
-        grid-template-columns: 300px 1fr;
+        grid-template-columns: 300px auto;
         grid-template-areas:
             "header header"
             "menu content"
@@ -93,6 +97,10 @@ header {
     .menu {
         display: inherit;
         position: sticky;
-        transform: translateX(0%);
+        padding-top: calc(20px + 1.4rem);
+        top: 0px;
+        transform: translateX(0%);        
+        width: auto;
+        z-index: auto;
     }
 }

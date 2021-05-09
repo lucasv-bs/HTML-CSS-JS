@@ -48,7 +48,7 @@ header {
     padding: 10px 15px;
 }
 
-.menu-button {    
+.menu-button {
     background-color: black;
     border: none;
     color: white;
@@ -63,13 +63,19 @@ header {
     text-decoration: none;
 }
 
+@media screen and (min-width: 990px) {
+    .menu-button {
+        display: none;
+    }
+}
+
 
 /* ------------------------------ */
 /*              Menu              */
 /* ------------------------------ */
 
 .menu {
-    background: white;    
+    background: white;
 }
 
 /* User area in the menu */
@@ -77,11 +83,11 @@ header {
     border-bottom: 1px solid lightgray;
     display: flex;
     margin-bottom: 2em;
-    padding: 15px;
+    padding: 10px 0px;
 }
 
 .menu-user-profile > div {
-    padding: 15px 0;
+    padding: 10px 15px 0;
 }
 
 .menu-user-picture {
@@ -101,7 +107,7 @@ header {
     flex-direction: column;
     justify-content: space-around;
     overflow: hidden;
-    padding: 15px;
+    padding: 10px 15px;
 }
 
 .menu-user-logged {
@@ -129,7 +135,7 @@ header {
 
 /* List of menu items */
 .menu-list > h2 {
-    padding: 15px;
+    padding: 5px 15px;
 }
 
 .menu-list-item {
@@ -151,6 +157,12 @@ header {
 .menu-list-item.active {
     background-color: var(--color-blue);
     color: white;
+}
+
+@media screen and (min-width: 990px) {
+    .close-menu-list {
+        display: none;
+    }
 }
 
 
