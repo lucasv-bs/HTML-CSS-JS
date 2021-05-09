@@ -441,6 +441,8 @@ td > .fa-share-alt {
 }
 
 .dashboard-comments-list-item {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 15px;
 }
 
@@ -449,7 +451,7 @@ td > .fa-share-alt {
     border-radius: 100%;
 }
 
-.dashboard-comments-list-item > p {
+.dashboard-comments-list-data > p {
     margin-top: 15px;
     padding: 0 15px;
 }
@@ -466,6 +468,18 @@ td > .fa-share-alt {
 .dashboard-comments-list-message {
     /* font-size: 0.9rem; */
     line-height: 1.5rem;
+}
+
+@media screen and (min-width: 600px) {
+    .dashboard-comments-list-item {
+        flex-direction: row;
+    }
+    .dashboard-comments-list-user-img {
+        margin-right: 15px;
+    }
+    .dashboard-comments-list-data {
+        flex: 1 1 400px;
+    }
 }
 
 /* ----- FILTERS ----- */
