@@ -82,12 +82,13 @@ header {
 .menu-user-profile {
     border-bottom: 1px solid lightgray;
     display: flex;
+    align-items: center;
     margin-bottom: 2em;
     padding: 10px 0px;
 }
 
 .menu-user-profile > div {
-    padding: 10px 15px 0;
+    padding: 10px 15px;
 }
 
 .menu-user-picture {
@@ -105,13 +106,12 @@ header {
     flex: 1 0 200px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     overflow: hidden;
-    padding: 10px 15px;
 }
 
 .menu-user-logged {
-    margin: 10px 0;
+    flex: 0 0 25px;
     transform: translateX(15%);
 }
 
@@ -120,6 +120,7 @@ header {
 }
 
 .menu-social-icons {
+    flex: 0 0 25px;
     transform: translateX(25%);
 }
 
