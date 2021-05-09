@@ -191,7 +191,7 @@ header {
 
 .dashboard-resume-items {
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
 }
 
 .dashboard-resume-item-box {
@@ -232,6 +232,19 @@ header {
 
 .dashboard-resume-item-box > p > i {
     font-size: 3rem;
+}
+
+@media screen and (min-width: 600px) {
+    .dashboard-resume-items {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .dashboard-resume-item-box {
+        flex: 0 1 250px;
+    }
+    .dashboard-resume-items .dashboard-resume-item-box + .dashboard-resume-item-box {
+        margin-left: 15px;
+    }
 }
 
 /* ----- REGIONS & FEEDS ----- */
