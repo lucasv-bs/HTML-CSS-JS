@@ -513,6 +513,18 @@ td > .fa-share-alt {
     margin-bottom: 20px;
 }
 
+@media screen and (min-width: 600px) {
+    .dashboard-filters {
+        display: flex;        
+    }
+    .dashboard-filters > div + div {
+        margin-top: 0px;
+        margin-left: 30px;
+    }
+    .dashboard-filters-demographic, .dashboard-filters-system, .dashboard-filters-target {
+        flex: 1 1 200px;
+    }
+}
 
 /* ------------------------------ */
 /*             Footer             */
