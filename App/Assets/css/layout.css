@@ -55,19 +55,20 @@ header {
 
 .menu {
     grid-area: menu;
-    display: none;
     position: fixed;
-    top: calc(20px + 1.4rem);
+    top: calc(20px + 1.3rem);
     transform: translateX(-100%);
     height: 100vh;
     width: 85%;
+    visibility: collapse;
     z-index: 2;
+    transition: transform 0.3s, visibility 0.3s;
 }
 
 .menu.show {
-    display: block;
     transform: translateX(0%);
-    transition: all 0.3s ease-in;
+    visibility: visible;
+    transition: transform 0.3s, visibility 0.3s;
 }
 
 .footer {
@@ -95,12 +96,12 @@ header {
     }
 
     .menu {
-        display: inherit;
         position: sticky;
         padding-top: calc(20px + 1.4rem);
         top: 0px;
         transform: translateX(0%);        
         width: auto;
+        visibility: inherit;
         z-index: auto;
     }
 }
